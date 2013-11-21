@@ -1,26 +1,10 @@
-# View Flow similar Path for Android
-
----
-
-ViewFlow similar Path is an Android UI widget providing a horizontally scrollable ViewGroup with items populated from an Adapter. Scroll down to the bottom of the page for a screen shot.
-
----
-
-## 使用说明
-
-
-### In SlideActivity.java
-
-    private int[] photosList = new int[] { R.drawable.bg1, R.drawable.bg2,
-			R.drawable.bg3, R.drawable.bg2 };
-	String[] titleText = {
-			"分享生活<br><small><font size=\"1\">记录和分享每一个时刻</font></small>",
-			"记录生活", "点滴", "记录生活" };
-			
-			
-### In layout
-
-     <ViewFlipper
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.myfirstapp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ViewFlipper
         android:id="@+id/photos"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -49,3 +33,5 @@ ViewFlow similar Path is an Android UI widget providing a horizontally scrollabl
         android:layout_marginBottom="80dp"
         android:padding="10dip"
      />
+
+</RelativeLayout>
